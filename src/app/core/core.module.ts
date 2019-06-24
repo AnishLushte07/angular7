@@ -6,6 +6,7 @@ import { AngularMaterialModule } from '../shared/angular-material.module';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavComponent } from './components/nav/nav.component';
+import { AuthService } from './service/auth.service';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NavComponent } from './components/nav/nav.component';
     NavigationBarComponent,
     NavComponent,
   ],
+  providers: [AuthService],
 })
 
 export class CoreModule { }

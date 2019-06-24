@@ -27,8 +27,8 @@ export class NavComponent implements OnInit {
 
   myWorkRoutes: ROUTE[] = [
     {
-      icon: 'assignment',
-      route: 'sales/activities',
+      icon: 'access',
+      route: 'access/oauth',
       title: 'Activities',
     }, {
       icon: 'dashboard',
