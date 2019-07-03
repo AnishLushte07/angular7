@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'template',
+    loadChildren: './template/template.module#TemplateModule'
+  },
+  {
     path: '**',
-    redirectTo: '/access/oauth',
+    redirectTo: '/template/list/me',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    preloadingStrategy: PreloadAllModules,
+    onSameUrlNavigation: 'reload',
+  })],
   exports: [RouterModule]
 })
 

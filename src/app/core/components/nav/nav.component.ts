@@ -32,7 +32,7 @@ export class NavComponent implements OnInit {
       title: 'Activities',
     }, {
       icon: 'dashboard',
-      route: 'sales/dashboards',
+      route: 'home',
       title: 'Dashboards',
     }
   ];

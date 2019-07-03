@@ -15,16 +15,18 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
-
+import {MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 
 @NgModule({
   imports: [
     MatButtonModule, MatIconModule, MatSidenavModule, MatListModule,
-    MatToolbarModule, MatMenuModule, MatDividerModule,
+    MatToolbarModule, MatMenuModule, MatDividerModule, MatDialogModule,
+    MatFormFieldModule, MatInputModule,
   ],
   exports: [
     MatButtonModule, MatIconModule, MatSidenavModule, MatListModule,
-    MatToolbarModule, MatMenuModule, MatDividerModule,
+    MatToolbarModule, MatMenuModule, MatDividerModule, MatDialogModule,
+    MatFormFieldModule, MatInputModule,
   ],
 })
 
